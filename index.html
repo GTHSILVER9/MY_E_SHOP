@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my_e_shop</title>
+    <title>my_e_shop</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,8 @@
     <a href="#" class="nav-logo"> 
         <h2 class="logo-text">MY E-SHOP</h2>
     </a>
-    <ul class="nav-menu"> 
+    <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button> 
         <li class="nav-item"> 
              <a href="#" class="nav-link"> Accueil</a>
         </li>
@@ -29,17 +31,30 @@
              <a href="#" class="nav-link"> Contacts</a>
         </li>
     </ul>
+    <button id="menu-open-button" class="fas fa-bars"></button> 
   </nav>
     </header>
   <main> 
     <section class="hero-section">
         <div class="section-content">
             <div class="hero-details">
-                <h2 class="title"> Bienvenue sur MY E SHOP</h2>
-                <h3 class="subtitle"> Decouvrez nos produit tendence, de qualite et a prix accessibles</h3>
+                <h1 class="title"> BIENVENUE SUR MY E SHOP </h1>
+                <h4 class="subtitle"> QUALITE SUPERIEURE | SERVICE EXCLUSIF | PAIEMENT SECURISE     </h4>
+                <P class="Description "> venez decouvrire nos produits tendance, de qualite et a prix accessibles.
+                   <br> Alors qu'es ce vous attandez, venez et faites-vous plaisir des maintenant
+                </P><br>
+                <div class="buttons">
+                    <a href="#" class="button commander"> commander</a>
+                     <a href="#" class="button Contacts"> Contacts</a>
+                    </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="app_electronic.jpg" alt="hero" class="hero-image" >
             </div>
         </div>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
