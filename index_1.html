@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique</title>
+    <link rel="stylesheet" href="css/style_1.css">
+</head>
+<body>
+    <header>
+        <h1>Boutique moderne</h1>
+        <button class="panier-btn" onclick="togglePanier()">Panier : <span id="compteur">0</span></button>
+    </header>
+    <div class="boutique">
+        <div class="produit">
+            <img src="https://viaplaceholder.com/250"alt="produit 1">
+            <h3>Produit 1</h3>
+            <p class="prix">2500</p>
+            <div class="quantite">
+                <button onclick="chnagerQuantite(this,-1)">-</button>
+                <span class="qte">1</span>
+                <button onclick="chnagerQuantite(this,1)">+</button>
+            </div>
+            <button class="btn-details" onclick="ouvrirModel('Produit 1','https://via.placeholder.com/400','super produit de qualite. ')"> voir details</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('produit 1',2500,this)"> Ajouter au panier</button>
+        </div>
+         <div class="produit">
+            <img src="https://viaplaceholder.com/250" alt="produit 1">
+            <h3>Produit 1</h3>
+            <p class="prix">2500</p>
+            <div class="quantite">
+                <button onclick="chnagerQuantite(this,-1)">-</button>
+                <span class="qte">1</span>
+                <button onclick="chnagerQuantite(this,1)">+</button>
+            </div>
+            <button class="btn-details" onclick="ouvrirModel('Produit 1','https://via.placeholder.com/400','super produit de qualite. ')"> voir details</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('produit 1',2500,this)"> Ajouter au panier</button>
+        </div>
+        <div id="modal" class="madal">
+            <div class="modal-content">
+                <span class="close" onclick="fermerModal()">&times;</span>
+                <h2 id="modal-title">souris</h2>
+                <img src="image/808600d7-8826-45da-be5f-12dda493e499.jpeg" alt="souris" id="model-img">
+                <p id="modal-img">souris odcojco wppjcei ejewns</p>
+            </div>
+        </div>
+        <div id="panier-float">
+            <h2>votre panier</h2>
+            <div id="contenu-panier"></div>
+            <div class="total">Total : 0 FCFA</div>
+        </div>
+    </div>
+    <script src="js/script_1.js"></script>
+</body>
+</html>

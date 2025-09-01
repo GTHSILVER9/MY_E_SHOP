@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, sans-serif; margin: 0; padding: 0;
+    background: #f4f4f4;   
+}
+header{
+    padding: 20px;
+    background: #2a9d8f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+header h1{
+    margin: 0;
+    font-size: 24px;
+}
+.panier-btn {
+    cursor: pointer;
+    font-weight: bold;
+    background: #e76f51;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center ;
+    gap: 5px;
+
+}
+
+.panier-btn:hover{
+    background: #d04e2d;
+}
+
+.boutique {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.produit{
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.produit:hover {
+    transform: translateY(-5px);
+}
+.produit img{
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.prix{
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.quantite button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #2a9d8f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-details, .btn-panier{ 
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.btn-details {
+    background: #457b9d;
+    color: white;
+}
+.btn-details:hover {
+    background: #1d3557;
+}
+.btn-panier {
+    background: #e76f51;
+    color: white;
+}
+.btn-panier:hover {
+    background: #d04e2d;
+}
+
+.modal{ 
+    display: none;
+    position: 20px;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba( 0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: ;
+}
