@@ -231,6 +231,31 @@ gap: 10px;
 .about-section .social-link-list .social-link:hover {
     color: var(--secondary-color);
 }
+.Avis-section {
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+}
+.Avis-section .Avis {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Avis-section .Avis .user-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: var(--border-radius-circle);
+}
+.Avis-section .Avis .name {
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+}
+.Avis-section .Avis .feedback {
+    line-height: 25px;
+}
 @media  screen and (max-width: 900px) {
     :root {
         

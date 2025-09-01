@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my_e_shop</title> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -84,19 +85,44 @@
     <section class="Avis-section">
         <h2 class="section-title">Avis</h2>
         <div class="section-content">
-            <div class="slider-container">
+            <div class="slider-container swiper">
                 <div class="slider-wrapper">
-                    <ul class="Avis-list">
-                        <li class="Avis">
+                    <ul class="Avis-list swiper-wrapper">
+                        <li class="Avis swiper-slide">
                             <img src="image/icone 4.jpeg" alt="user" class="user-image">
+                            <h3 class="name">Anna T.</h3>
+                            <i class="feedback">Excellente experience d'achat,
+                                 paiement securise et service client au top !</i>
+                        </li>
+                        <li class="Avis swiper-slide">
+                           <img src="image/icone1.jpeg" alt="user" class="user-image">
+                            <h3 class="name">Hermann G.</h3>
+                            <i class="feedback">Site fiable, j'ai trouve exactement ce que je cherchais.
+                                 J'adore la facilite de navigation sur le site.</i>
+                        </li>
+                        <li class="Avis swiper-slide">
+                           <img src="image/icone.jpeg" alt="user" class="user-image">
+                            <h3 class="name">Rayan P.</h3>
+                            <i class="feedback">Produits corrects mais j'aurais aime plus de choix dans les couleurs.
+                                Sinon, service correct.
+                            </i>
+                        </li>
+                        <li class="Avis swiper-slide">
+                           <img src="image/icone3.jpeg" alt="user" class="user-image">
+                            <h3 class="name">Lyne .D</h3>
+                            <i class="feedback">Tres bon rapport qualite-prix.</i>
                         </li>
                     </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
     </section>
   </main>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
