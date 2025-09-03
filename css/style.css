@@ -31,7 +31,7 @@
        --border-radius-m:30px; 
        --border-radius-circle:50%;
        
-       --site-max-width:1300px;
+       --site-max-width:1800px;
 }
 ul {
 list-style: none;
@@ -40,7 +40,7 @@ a {
 text-decoration: none;
 }
 button {
-    cursor: pointer;
+cursor: pointer;
 border: none;
 background: none;
  
